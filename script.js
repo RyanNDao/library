@@ -9,12 +9,21 @@ const booksContainer = document.querySelector('.books-container');
 const addNewBookButton = document.querySelector('.new-book');
 const formContainer = document.querySelector('.form-container');
 const header = document.querySelector('h2.header')
-
+/*
 function Book(author, title, pages, read){
     this.author = author;
     this.title = title;
     this.pages = pages;
     this.read = read;
+}*/
+
+class Book {
+    constructor(author, title, pages, read){
+        this.author = author;
+        this.title = title;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(bookObject){
